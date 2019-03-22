@@ -1,0 +1,17 @@
+<h1>Enter A New Sighting!</h1>
+
+<%= form_for @sighting do |f| %>
+  <%= f.hidden_field :animal_id %>
+    <%= f.label :date %>
+  <%= f.text_field :date %></br>
+    <%= f.label :time %>
+  <%= f.text_field :time %></br>
+    <%= f.label :latitude %>
+  <%= f.text_field :latitude %></br>
+    <%= f.label :longitude %>
+  <%= f.text_field :longitude %></br>
+    <%= f.label :region %>
+  <%= f.text_field :region %></br>
+
+  <%= f.submit "Create Sighting" %>
+<% end %>

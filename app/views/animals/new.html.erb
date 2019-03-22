@@ -1,0 +1,19 @@
+<h1>Add the animal you spotted!</h1>
+
+<%= form_for @animals do |e| %>
+
+<%= e.label :name %>
+<%= e.text_field :name%>
+
+<%= e.label :latin_name %>
+<%= e.text_field :latin_name%>
+
+<%= e.label :kingdom %>
+<%= e.text_field :kingdom%>
+
+
+
+<%=e.submit%>
+<%end%>
+
+<%=link_to "Go Back Home", animals_path%>

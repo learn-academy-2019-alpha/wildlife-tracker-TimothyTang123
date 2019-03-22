@@ -1,0 +1,17 @@
+<h1>Edit the Animal</h1>
+
+<%= form_for @animal do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name%>
+
+<%= f.label :latin_name %>
+<%= f.text_field :latin_name%>
+
+<%= f.label :kingdom %>
+<%= f.text_field :kingdom%>
+
+
+
+<%=f.submit%>
+<%end%>

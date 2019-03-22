@@ -1,0 +1,14 @@
+<h1>Welcome to Animal Wildlife Tracker!</h1>
+
+<%= link_to 'Add an Animal', new_animal_path %>
+
+<ul>
+    <% @animals.each do |animal| %>
+<%= animal.name %>
+<button class="button is-link is-rounded"><%= link_to 'More info', animal_path(animal)%></button>
+<%= link_to 'Update', edit_animal_path(animal)%>
+<button type="button" class="btn btn-primary btn-lg"><%=button_to "Delete", animal, :method => :delete, data: {confirm: "Are you sure you want to delete?"} %></button>
+<hr>
+<%end%>
+    
+</ul>
